@@ -23,8 +23,8 @@ Authors
 
 Collaborators
 -------------
+ - [Gabriel Hoffman](gabriel.hoffman@mssm.edu)
  - Kaur Alasoo
- - Gabriel Hoffman
  - Veera Manikandan
  - Panos Roussos
  - Solly Sieberts
