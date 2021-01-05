@@ -23,7 +23,7 @@ Authors
 
 Collaborators
 -------------
- - [Gabriel Hoffman](gabriel.hoffman@mssm.edu)
+ - [Gabriel Hoffman](http://gabrielhoffman.github.io)
  - Kaur Alasoo
  - Veera Manikandan
  - Panos Roussos
