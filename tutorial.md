@@ -4,7 +4,11 @@ Gabriel Hoffman
 
 September 7, 2020
 
-Start by download RAPID to a local directory from [https://github.com/genomely/RAPiD-nf](https://github.com/genomely/RAPiD-nf)
+Start by download RAPID to a local directory from [https://github.com/CommonMindConsortium/RAPiD-nf](https://github.com/CommonMindConsortium/RAPiD-nf).
+
+Paths here refer to Mount Sinai's Minerva HPC system, but should be changed for a different system. The reference genome (GRCh38) and transcripome (Gencode.v30) used here are specified by `--genome GRCh38.Gencode.v30`.  Note that the `config/chimera.config` specifies the locations of annotations files on the local system.
+
+#### Set up variables and paths
 
 ```bash
 # load NextFlow
@@ -36,7 +40,7 @@ In these examples, most methods are enabled.  You can remove `--rsem` to same ti
 
 
 #### Test run
-Note that this just checks the files.  `--dryRun` means that jobs won't be submitted to queue.
+Note that this just checks the files: `--dryRun` means that jobs won't be submitted to queue.
 
 ```shell
 nextflow run $NF \

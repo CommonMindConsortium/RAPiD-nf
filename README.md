@@ -1,6 +1,20 @@
 # RAPiD-nf
 
-RAPiD is an RNASeq pipeline used and maintained by Ying-Chih Wang and Hardik Shah in the Department of Genetics and Genomic Sciencese, Icahn Institute for Genomics and Multiscale Biology at Mount Sinai [1]. While RAPiD is built on Mount Sinai's APOLLO framework [2], RAPiD-nf inherits the same pipeline structure and is ported to Nextflow pipeline engine [3].
+RAPiD is an RNA-Seq pipeline used and maintained by Ying-Chih Wang and Hardik Shah in the [Department of Genetics and Genomic Sciences](https://icahn.mssm.edu/research/genomics), [Icahn Institute for Data Science and Genomic Technology](http://datascience.icahn.mssm.edu).  RAPiD is implemented using the [Nextflow](https://www.nextflow.io) pipeline engine and the [LSF](https://www.ibm.com/products/hpc-workload-management) job manager to enabl processing of raw RNA-seq FASTQ files for analysing using:
+
+ - [trimmomatic v0.36](http://www.usadellab.org/cms/index.php?page=trimmomatic)
+ - [picard v2.20.0](https://broadinstitute.github.io/picard/)
+ - [fastqc v0.11.8](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+ - [STAR v2.7.2a](https://github.com/alexdobin/STAR)
+ - [STAR/WASP](https://github.com/alexdobin/STAR/blob/master/RELEASEnotes.md#star-260a-20180423)
+ - [featurecounts v1.6.3](http://subread.sourceforge.net)
+ - [salmon v0.13.1](https://combine-lab.github.io/salmon/)
+ - [kallisto v0.45.0](https://pachterlab.github.io/kallisto/)
+ - [rsem v1.3.1](https://deweylab.github.io/RSEM/)
+ - [leafcutter v0.2.8](https://davidaknowles.github.io/leafcutter/)
+
+# Running RAPiD
+See [tutorial](https://github.com/CommonMindConsortium/RAPiD-nf/blob/master/tutorial.md) on running RAPiD using Nextflow v19.10.0 and LSF v10.1.0.0.
 
 Authors
 -------
@@ -17,15 +31,3 @@ Collaborators
  - Laura Sloofman
  - Georgios Voloudakis
  
-
-Reference
----------
-[1] Y.-C. Wang et al., "RAPiD: An Agile and Dependable RNA-Seq Framework," in The 65th Annual Meeting of The American Society of Human Genetics, Baltimore, MD, 2015.
-
-[2] R. Z. Castellanos et al., "Apollo: A Production Tested, Vertically Integrated, Operations Enhanced, Science Aware Framework for Launching Large Cohorts of Genomics Pipelines," in The 65th Annual Meeting of The American Society of Human Genetics, Baltimore, MD, 2015.
-
-[3] Nextflow Data-driven computational pipelines, https://www.nextflow.io/
-
-License
--------
-TBD
